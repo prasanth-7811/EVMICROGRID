@@ -4,10 +4,11 @@ from __future__ import annotations
 
 from fastapi import Body, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from .agents import AgentOrchestrator
 from .config import DASHBOARD_DIR, DEMO_DATE, DEMO_SEED, MODEL_VERSION
+import os
 from .schemas import (
     AgentListResponse,
     DashboardResponse,
@@ -93,6 +94,9 @@ def monitoring() -> MonitoringResponse:
     return orchestrator.monitoring()
 
 
-# Keep this mount last: API and OpenAPI routes must win over the dashboard's
-# catch-all root mount.  StaticFiles(html=True) serves dashboard/index.html at /.
-app.mount("/", StaticFiles(directory=str(DASHBOARD_DIR), html=True), name="dashboard")
+@app.get("/")
+def root():
+    index = DASHBOARD_DIR / "index.html"
+    if index.exists():
+        return FileResponse(str(index))
+    return {"status": "ok"}

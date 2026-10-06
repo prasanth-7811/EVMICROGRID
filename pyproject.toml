@@ -1,1 +1,10 @@
-
+[project]
+name = "ev-energy-microgrid"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.135.2",
+    "uvicorn==0.42.0",
+    "pydantic==2.12.5",
+    "starlette==0.52.1",
+]

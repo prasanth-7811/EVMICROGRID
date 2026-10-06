@@ -1,0 +1,45 @@
+INFO:     Started server process [33700]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54337 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54337 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54337 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59255 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54337 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54337 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52297 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52297 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "GET /styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52545 - "GET /app.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52545 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53488 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53488 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64310 - "POST /api/optimize HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56765 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63945 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58770 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58770 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51699 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62007 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51004 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51004 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51895 - "POST /api/optimize HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62813 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60597 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56442 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56442 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59987 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58587 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51819 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51819 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60544 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61620 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53983 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53983 - "GET /api/monitoring HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60984 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56479 - "GET /api/dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51641 - "GET /api/monitoring HTTP/1.1" 200 OK

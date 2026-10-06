@@ -1,0 +1,37 @@
+[
+  {
+    "policy_id": "EV-POL-001",
+    "title": "Departure readiness and minimum state of charge",
+    "source": "local-demo-policy/charging-safety",
+    "tags": ["departure", "soc", "readiness", "safety", "charging"],
+    "text": "Every connected vehicle should reach its declared departure target state of charge before departure. Charging plans must preserve the configured minimum reserve state of charge and must not exceed the vehicle's rated charge power."
+  },
+  {
+    "policy_id": "EV-POL-002",
+    "title": "Conservative vehicle-to-grid operation",
+    "source": "local-demo-policy/v2g-guardrails",
+    "tags": ["v2g", "discharge", "reserve", "grid", "safety"],
+    "text": "Vehicle-to-grid discharge is allowed only for V2G-capable vehicles, within the rated discharge power, and above the minimum reserve. The scheduler should preserve departure readiness and favor discharge during high-price or high-load periods."
+  },
+  {
+    "policy_id": "EV-POL-003",
+    "title": "Renewable-first charging",
+    "source": "local-demo-policy/renewables",
+    "tags": ["solar", "renewable", "curtailment", "charging", "carbon"],
+    "text": "Use available on-site solar for flexible EV charging before importing energy from the grid when operational constraints permit. Prefer hours with a high renewable signal and report any remaining solar curtailment."
+  },
+  {
+    "policy_id": "EV-POL-004",
+    "title": "Time-of-use cost awareness",
+    "source": "local-demo-policy/tariffs",
+    "tags": ["tariff", "cost", "peak", "off-peak", "price"],
+    "text": "Flexible charging should be shifted toward lower import-rate periods where doing so does not conflict with departure readiness. Evening peak prices are a signal for conservation and, when safe, limited V2G support."
+  },
+  {
+    "policy_id": "EV-POL-005",
+    "title": "Human review and local-only data handling",
+    "source": "local-demo-policy/governance",
+    "tags": ["privacy", "local", "review", "explainability", "governance"],
+    "text": "Recommendations are decision support for an operator, not autonomous safety commands. Keep demonstration data local, show the evidence behind recommendations, and request human review when constraints cannot be satisfied."
+  }
+]
